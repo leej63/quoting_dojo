@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="en" style="margin:20px;">
+<head>
+    <title>Quoting Dojo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+	<h1>Welcome to Quoting Dojo</h1>
+	<form action="/quotes" method="POST" class="form-group" style="width: 25%">
+		<label>Your Name: </label>
+		<input name="name" type="text" class="form-control"></input>
+		<label>Your Quote: </label>
+		<textarea class="form-control" name="quote" id="quote" rows='4'></textarea><br>
+		<input type="submit" value="Add my quote!" class="btn btn-primary"></input>
+	</form>
+	<form action="/quotes" method="GET">
+		<input type="submit" class="btn btn-primary" value="Go to quotes!"></input>
+	</form>
+</body>
+</html>
